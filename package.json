@@ -1,0 +1,24 @@
+{
+  "name": "zoom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "peerjsStart": "peerjs --port 3001",
+    "devStart": "nodemon server.js",
+    "prodStart": "pm2 start server.js --name zoom -i max --watch && peerjs --port 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "peer": "^0.6.1",
+    "socket.io": "^4.5.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
